@@ -277,17 +277,15 @@ function WinMove() {
 $(function () {
 
         // 匹配链接
-        var url = (window.location.pathname).toLowerCase() //获取相对路径转为小写
-
-        var need = url.replace(/\//g, '');
+        var url =  $('.model-url').val().toLowerCase(); //(window.location.pathname).toLowerCase() //获取相对路径转为小写
         var urlStatus = false;
         var menuObj = $("#side-menu > li:gt(0) a");
         //遍历所有菜单
         menuObj.each(function () {
-            var href = $(this).attr('href')
-            var menuStr = href.replace(/\//g, '');
+            var model = $(this).attr('data-model');//.toLowerCase();
+            model = model != undefined ? model.toLowerCase() : '';
             //判断当前菜单是否存在
-            if(need.indexOf(menuStr) > -1 && menuStr != ''){
+            if(model && model === url ){
                 $(this).parent().addClass('active');
                 $(this).parent().parent().addClass('in');
                 $(this).parent().parent().parent().addClass('active'); //针对有二级菜单选中的样式添
@@ -296,6 +294,7 @@ $(function () {
                 $(this).parent().removeClass('active');
             }
         });
+
 
         if(!urlStatus){
             menuObj.parent().eq(0).addClass('active');
