@@ -4,6 +4,8 @@
 *.via
 *.tmp
 *.err
+.idea
+.DS_Store
 
 /runtime/
 

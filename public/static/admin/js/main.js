@@ -279,19 +279,13 @@ $(function () {
         // 匹配链接
         var url = (window.location.pathname).toLowerCase() //获取相对路径转为小写
 
-        var tmp = url.replace('/','').replace('/','')
-        var end = Number(tmp.indexOf('/'))
-        var need = tmp.substr(0,end)
+        var need = url.replace(/\//g, '');
         var urlStatus = false;
         var menuObj = $("#side-menu > li:gt(0) a");
-        
         //遍历所有菜单
         menuObj.each(function () {
-
             var href = $(this).attr('href')
-            var menuTmp = href.replace('/','').replace('/','')
-            var menuEnd = Number(menuTmp.indexOf('/'))
-            var menuStr = menuTmp.substr(0,menuEnd)
+            var menuStr = href.replace(/\//g, '');
             //判断当前菜单是否存在
             if(need.indexOf(menuStr) > -1 && menuStr != ''){
                 $(this).parent().addClass('active');
