@@ -12,5 +12,6 @@
 .DS_Store
 
 ## Directory for Utils
-/composer.lock
-/tests
+composer.lock
+tests
+thinkphp
