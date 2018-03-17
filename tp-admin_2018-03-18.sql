@@ -1,5 +1,3 @@
-# Dump of table ta_auth_access
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `ta_auth_access`;
 
@@ -10,9 +8,6 @@ CREATE TABLE `ta_auth_access` (
   KEY `rule_name` (`rule_id`) USING BTREE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='权限授权表';
 
-LOCK TABLES `ta_auth_access` WRITE;
-/*!40000 ALTER TABLE `ta_auth_access` DISABLE KEYS */;
-
 INSERT INTO `ta_auth_access` (`role_id`, `rule_id`)
 VALUES
   (2,3),
@@ -20,12 +15,6 @@ VALUES
   (2,1),
   (3,2);
 
-/*!40000 ALTER TABLE `ta_auth_access` ENABLE KEYS */;
-UNLOCK TABLES;
-
-
-# Dump of table ta_auth_rule
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `ta_auth_rule`;
 
@@ -39,9 +28,6 @@ CREATE TABLE `ta_auth_rule` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='权限规则表';
 
-LOCK TABLES `ta_auth_rule` WRITE;
-/*!40000 ALTER TABLE `ta_auth_rule` DISABLE KEYS */;
-
 INSERT INTO `ta_auth_rule` (`id`, `title`, `rule_val`, `pid`, `update_time`, `delete_time`)
 VALUES
   (1,'内容管理','admin/index/index',3,1484209924,NULL),
@@ -51,12 +37,6 @@ VALUES
   (6,'Admin/User','admin/user',0,1484145913,NULL),
   (7,'niu','admin/user/index',6,NULL,NULL);
 
-/*!40000 ALTER TABLE `ta_auth_rule` ENABLE KEYS */;
-UNLOCK TABLES;
-
-
-# Dump of table ta_log_record
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `ta_log_record`;
 
@@ -72,20 +52,11 @@ CREATE TABLE `ta_log_record` (
   KEY `user_id` (`user_id`) USING BTREE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='后台操作日志记录';
 
-LOCK TABLES `ta_log_record` WRITE;
-/*!40000 ALTER TABLE `ta_log_record` DISABLE KEYS */;
-
 INSERT INTO `ta_log_record` (`id`, `user_id`, `ip`, `os`, `browser`, `remark`, `create_time`)
 VALUES
   (79,4,'110.184.40.9','Mac OS X 10_12_2','chrome-55','登录成功',1484449096),
   (80,1,'110.184.40.9','Mac OS X 10_12_2','chrome-55','登录成功',1484449112);
 
-/*!40000 ALTER TABLE `ta_log_record` ENABLE KEYS */;
-UNLOCK TABLES;
-
-
-# Dump of table ta_role
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `ta_role`;
 
@@ -102,20 +73,12 @@ CREATE TABLE `ta_role` (
   KEY `status` (`status`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='角色表';
 
-LOCK TABLES `ta_role` WRITE;
-/*!40000 ALTER TABLE `ta_role` DISABLE KEYS */;
-
 INSERT INTO `ta_role` (`id`, `name`, `pid`, `status`, `remark`, `create_time`, `update_time`)
 VALUES
   (1,'超级管理员1',0,1,'网站最高管理员权限！',1329633709,1329633709),
   (2,'测试角色',NULL,0,'测试角色',1482389092,0);
 
-/*!40000 ALTER TABLE `ta_role` ENABLE KEYS */;
-UNLOCK TABLES;
 
-
-# Dump of table ta_user
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `ta_user`;
 
@@ -133,8 +96,6 @@ CREATE TABLE `ta_user` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='用户表';
 
-LOCK TABLES `ta_user` WRITE;
-/*!40000 ALTER TABLE `ta_user` DISABLE KEYS */;
 
 INSERT INTO `ta_user` (`id`, `username`, `mobile`, `password`, `status`, `create_time`, `administrator`, `role_id`, `update_time`, `delete_time`)
 VALUES
@@ -143,15 +104,3 @@ VALUES
   (2,'管理员','15100000000','4c3c8afaf91b4dd81bcf68ba519fa2f6',1,1482835627,1,2,1484148776,NULL),
   (4,'aierui','13330613322','4c3c8afaf91b4dd81bcf68ba519fa2f6',1,1484448977,0,2,1484448977,NULL),
   (5,'test','13330613012','4c3c8afaf91b4dd81bcf68ba519fa2f6',1,1484449210,0,2,1484449239,1484449239);
-
-/*!40000 ALTER TABLE `ta_user` ENABLE KEYS */;
-UNLOCK TABLES;
-
-
-
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
