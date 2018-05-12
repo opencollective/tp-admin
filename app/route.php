@@ -11,10 +11,6 @@
 
 use think\Route;
 
-
-Route::rule('test/:id','admin/Test/read');
-
-
 return [
     '__pattern__' => [
         'name' => '\w+',
