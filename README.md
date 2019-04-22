@@ -1,4 +1,4 @@
-# TP-admin
+# TP-admin [![Backers on Open Collective](https://opencollective.com/tp-admin/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/tp-admin/sponsors/badge.svg)](#sponsors) 
 
 TP-admin即基于ThinkPHP5拿来即用高性能后台管理系统
 
@@ -103,3 +103,33 @@ TP-admin即基于ThinkPHP5的admin后台管理系统
 
 ## 交流
 - 问题只接受来自[Github上Issues](https://github.com/Astonep/tp-admin/issues)《源码附截图，并描述清楚
+
+## Contributors
+
+This project exists thanks to all the people who contribute. 
+<a href="https://github.com/aierui/tp-admin/graphs/contributors"><img src="https://opencollective.com/tp-admin/contributors.svg?width=890&button=false" /></a>
+
+
+## Backers
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/tp-admin#backer)]
+
+<a href="https://opencollective.com/tp-admin#backers" target="_blank"><img src="https://opencollective.com/tp-admin/backers.svg?width=890"></a>
+
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/tp-admin#sponsor)]
+
+<a href="https://opencollective.com/tp-admin/sponsor/0/website" target="_blank"><img src="https://opencollective.com/tp-admin/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/tp-admin/sponsor/1/website" target="_blank"><img src="https://opencollective.com/tp-admin/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/tp-admin/sponsor/2/website" target="_blank"><img src="https://opencollective.com/tp-admin/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/tp-admin/sponsor/3/website" target="_blank"><img src="https://opencollective.com/tp-admin/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/tp-admin/sponsor/4/website" target="_blank"><img src="https://opencollective.com/tp-admin/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/tp-admin/sponsor/5/website" target="_blank"><img src="https://opencollective.com/tp-admin/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/tp-admin/sponsor/6/website" target="_blank"><img src="https://opencollective.com/tp-admin/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/tp-admin/sponsor/7/website" target="_blank"><img src="https://opencollective.com/tp-admin/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/tp-admin/sponsor/8/website" target="_blank"><img src="https://opencollective.com/tp-admin/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/tp-admin/sponsor/9/website" target="_blank"><img src="https://opencollective.com/tp-admin/sponsor/9/avatar.svg"></a>
+
+
